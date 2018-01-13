@@ -13,15 +13,16 @@
 		<welcome-file>default.jsp</welcome-file>
 	</welcome-file-list>
 	<servlet>
-		<servlet-name>ServletCNX</servlet-name>
-		<servlet-class>chat.servlet.ServletCNX</servlet-class>
-		<init-param>
-			<param-name>com.sun.jersey.config.property.chat.servlet</param-name>
-			<param-value>chat.servlet</param-value>
-		</init-param>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>ServletCNX</servlet-name>
-		<url-pattern>/ServletCNX</url-pattern>
-	</servlet-mapping>
+        <servlet-name>Jersey Web Application</servlet-name>
+        <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+        <init-param>
+            <param-name>com.sun.jersey.config.property.packages</param-name>
+            <param-value>chat</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Jersey Web Application</servlet-name>
+        <url-pattern>/w-s/*</url-pattern>
+    </servlet-mapping>
 </web-app>
