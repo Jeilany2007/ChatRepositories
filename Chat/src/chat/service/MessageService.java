@@ -10,7 +10,7 @@ public class MessageService {
 	public List<Message> getAllMessages() {
 		
 		Message m1 = new Message(1L, "Hello World", "Hanane");
-		Message m2 = new Message(2L, "Hello Toutou", "Jailany");
+		Message m2 = new Message(2L, "Hello Toutou", "Fatma");
 		List<Message> list = new ArrayList<>();
 		list.add(m1);
 		list.add(m2);
